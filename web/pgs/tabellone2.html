@@ -1,0 +1,72 @@
+
+
+<form>
+    <div class="form-group">
+        <label for="idstudent">ID</label>
+        <input type="id" class="form-control" id="id" />
+    </div>
+    <div class="form-group">
+        <label for="namestudent">Nome</label>
+        <input type="name" class="form-control" id="name" />
+    </div>
+    <div class="form-group">
+        <label for="surnamestudent">Cognome</label>
+        <input type="surname" class="form-control" id="surname" />
+    </div>
+    <div class="form-group">
+        <label for="agestudent">Età</label>
+        <select class="form-control" id="age">
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+        </select>
+    </div>
+    <fieldset class="form-group row">
+        <legend class="col-form-legend col-sm-2">Sesso</legend>
+        <div class="col-sm-10">
+            <label class="form-check-input">
+                <input class="form-check-input" type="radio" name="male" id="sex" value="option1" />
+                Maschio
+            </label>
+        </div>
+        <div class="col-sm-10">
+            <label class="form-check-input">
+                <input class="form-check-input" type="radio" name="female" id="sex" value="option2"/>
+                Femmina
+            </label>
+        </div>
+   </fieldset>
+   <fieldset class="form-group row">
+        <legend class="col-form-legend col-sm-2">Chat</legend>
+        <div class="col-sm-10">
+            <label class="form-check-input">
+                <input class="form-check-input" type="radio" name="online" id="chat" value="option1"/>
+                Online
+            </label>
+        </div>
+        <div class="col-sm-10">
+            <label class="form-check-input">
+                <input class="form-check-input" type="radio" name="offline" id="chat" value="option2"/>
+                Offline
+            </label>
+        </div>
+   </fieldset>
+   <div class="form-group">
+       <label for="date">Data</label>
+       <input type="text" class="form-control" id='datepicker4' />
+   </div>
+</form>
+
+
+
+<script>
+    $(function () {
+    $('#datepicker4').datepicker();
+});
+</script>
